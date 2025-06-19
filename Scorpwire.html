@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Scorpwire - GreenCore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+      color: #333;
+    }
+    .contenedor {
+      background-color: white;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+    .contenedor::before, .contenedor::after {
+      content: "🪼";
+      font-size: 2em;
+      position: absolute;
+    }
+    .contenedor::before {
+      top: 0.5em;
+      left: 0.5em;
+    }
+    .contenedor::after {
+      top: 0.5em;
+      right: 0.5em;
+    }
+    img {
+      width: 40%;
+      border-radius: 8px;
+      margin: 1em 0;
+    }
+    .btn-volver {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.7em 1.5em;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <img src="Agregar un título.jpg" alt="Scorpwire">
+    <p>Agrega fuerza y estilo a tus espacios con este escorpión decorativo hecho completamente de alambre entrelazado a mano. Su diseño intrincado y realista captura la esencia del escorpión: poderoso, elegante y con una presencia inconfundible.✨</span></p>
+    
+    <p>Cada pieza es elaborada con paciencia, detalle y técnica artesanal, transformando materiales simples en una escultura con carácter. Ideal para quienes aprecian el arte industrial, lo rústico o lo alternativo.</p>
+    
+    <img src="1000029978.jpg" alt="scorpwire">
+
+    <div class="cantidad">
+      <label for="unidades">Cantidad:</label>
+      <input type="number" id="unidades" name="unidades" value="1" min="1">
+      <button class="btn-comprar" onclick="comprar()">Comprar</button>
+    </div> 
+
+    <a class="btn-volver" href="GreenCore.html">Volver a la página principal</a>
+  </div>
+
+  <script>
+    function comprar() {
+      const cantidad = document.getElementById('unidades').value;
+      alert(`Has comprado ${cantidad} unidad(es) de Scorpwire. ¡Gracias por tu apoyo sostenible!`);
+    }
+  </script>
+
+</body>
+</html>
+
